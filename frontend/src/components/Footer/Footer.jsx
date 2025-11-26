@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="footer-content">
-
         <div className="footer-content-left">
           <img src={assets.logo} alt="" />
           <p>
@@ -33,16 +32,16 @@ const Footer = () => {
         </div>
 
         <div className="footer-content-right">
-            <h2>GET IN TOUCH</h2>
-            <ul>
-                <li>+91-8445540485</li>
-                <li>ashishyadav@gmail.com</li>
-            </ul>
+          <h2>GET IN TOUCH</h2>
+          <ul>
+            <li>+91-8445540485</li>
+            <li>ashishyadav844554@gmail.com</li>
+          </ul>
         </div>
       </div>
       <hr />
       <p className="footer-copright">
-            Copyright 2024 $ Tomato.com-All right reserved 
+        Copyright 2025 $ Tomato.com-All right reserved
       </p>
     </div>
   );
