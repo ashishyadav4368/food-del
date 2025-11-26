@@ -14,11 +14,12 @@ app.use(express.json());
 app.use(cors({
     origin: [
         "https://food-del-beta-eight.vercel.app",   // frontend live URL
-        "https://food-del-admin.vercel.app"         // admin live URL
+        "https://food-del-ahj5.vercel.app"          // admin actual URL
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
+
 
 
 // DB connection
