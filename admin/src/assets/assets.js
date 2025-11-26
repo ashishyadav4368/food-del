@@ -5,13 +5,14 @@ import profile_image from './profile_image.png'
 import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
 
-export const assets ={
+export const assets = {
     logo,
     add_icon,
     order_icon,
     profile_image,
     upload_area,
     parcel_icon
-}
+};
 
-export const url = 'http://localhost:4000'
+// Use Vite environment variable instead of hardcoded localhost
+export const url = import.meta.env.VITE_API_URL;
