@@ -7,19 +7,15 @@ const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart, url } =
     useContext(StoreContext);
 
-  // Debugging: Check if cartItems and id are aligned
-  // console.log("Food ID:", id, "Count in Cart:", cartItems[id]);
-  // console.log("Cart Items:", cartItems);
-
   return (
     <div className="food-item">
       <div className="food-item-img-container">
-        {/* Debugging: Confirm image URL */}
         <img
           className="food-item-image"
-          src={url + "/images/" + image}
+          src={`${url}/images/${image}`} // Correct full image URL
           alt={name}
         />
+
         {!cartItems[id] ? (
           <img
             className="add"
@@ -43,11 +39,13 @@ const FoodItem = ({ id, name, price, description, image }) => {
           </div>
         )}
       </div>
+
       <div className="food-item-info">
         <div className="food-item-name-rating">
           <p>{name}</p>
           <img src={assets.rating_starts} alt="Rating stars" />
         </div>
+
         <p className="food-item-desc">{description}</p>
         <p className="food-item-price">${price}</p>
       </div>
