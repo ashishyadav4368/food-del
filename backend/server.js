@@ -11,7 +11,15 @@ const PORT = process.env.PORT || 4000;
 
 // Middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: [
+        "https://food-del-beta-eight.vercel.app",   // frontend live URL
+        "https://food-del-admin.vercel.app"         // admin live URL
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
+
 
 // DB connection
 connectDB();
